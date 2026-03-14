@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | Joker Gems</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f1a;
+    color: white;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(90deg,#ff0080,#7928ca);
+    color: white;
+}
+button:hover {
+    opacity: 0.8;
+}
+a {
+    color: #00ffff;
+}
+</style>
+
+<script>
+function closeWebView() {
+    if (window.Android && Android.closeWebView) {
+        Android.closeWebView();
+    } else if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.closeWebView) {
+        window.webkit.messageHandlers.closeWebView.postMessage(null);
+    } else {
+        window.close();
+    }
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+<h1>Privacy Policy</h1>
+
+<p>Joker Gems by Stacey Development respects your privacy.</p>
+
+<h3>Data Collection</h3>
+<p>We do NOT collect any personal data.</p>
+
+<h3>Data Storage</h3>
+<p>We do NOT store any data.</p>
+
+<h3>Data Sharing</h3>
+<p>We do NOT share any data with third parties.</p>
+
+<h3>Third-Party Services</h3>
+<p>The application does not use third-party analytics, ads, or tracking systems.</p>
+
+<p>If you have any questions, contact: cupipikijob92@gmail.com</p>
+
+<button onclick="closeWebView()">Close Policy</button>
+
+<p style="margin-top:20px;">
+<a href="index.html">Back to Developer Page</a>
+</p>
+</div>
+
+</body>
+</html>
