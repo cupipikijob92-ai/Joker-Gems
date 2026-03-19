@@ -3,58 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Joker Gems</title>
+<title>Marketing</title>
+
 <style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(120deg,#1a1a2e,#16213e);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-.section {
-    margin: 20px auto;
-    max-width: 700px;
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-.section:hover {
-    transform: translateY(-5px);
-}
-h1 {
-    font-size: 2rem;
-}
-a {
-    display: inline-block;
-    margin-top: 20px;
-    color: cyan;
-}
+:root{--bg:#0b0f1a;--card:#12182a;--accent:#00e5ff;--accent2:#ff00cc;--text:#fff;--muted:#a0a8c0;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Inter;background:#0b0f1a;color:white;}
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:center;gap:10px;padding:15px;background:rgba(0,0,0,0.6);}
+nav a{color:white;text-decoration:none;padding:10px 18px;border-radius:20px;border:1px solid rgba(255,255,255,0.2);}
+section{padding:100px 20px;max-width:800px;margin:auto;}
+.card{background:var(--card);padding:25px;border-radius:16px;margin:15px 0;}
 </style>
 </head>
+
 <body>
 
-<h1>Joker Gems</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="privacy.html">Privacy</a>
+<a href="marketing.html">Marketing</a>
+<a href="support.html">Support</a>
+</nav>
 
-<div class="section">
-    <h2>About the Developer</h2>
-    <p>Stacey Development is a beginner independent developer passionate about building mobile applications.</p>
+<section>
+
+<h1>Marketing & Vision</h1>
+
+<div class="card">
+<h2>Developer Status</h2>
+<p>This project is created by an independent beginner developer.</p>
 </div>
 
-<div class="section">
-    <h2>Project Vision</h2>
-    <p>I am working hard to improve Joker Gems and bring value to players through engaging gameplay and continuous updates.</p>
+<div class="card">
+<h2>Current State</h2>
+<p>The application currently has no paid features or subscriptions.</p>
 </div>
 
-<div class="section">
-    <h2>Monetization Plans</h2>
-    <p>Currently, the application does not include paid features or subscriptions.</p>
-    <p>In the future, premium features or optional subscriptions may be introduced to support further development and provide even better value.</p>
+<div class="card">
+<h2>Future Plans</h2>
+<p>Optional monetization (premium features or subscriptions) may be introduced to support further development.</p>
 </div>
 
-<a href="index.html">Back to Developer Page</a>
+<div class="card">
+<h2>Core Goal</h2>
+<p>The primary goal is to deliver value to users through consistent updates and improvements.</p>
+</div>
+
+</section>
 
 </body>
 </html>
