@@ -4,80 +4,136 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stacey Development | Joker Gems</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
-body {
-    margin: 0;
-    font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(135deg, #1e0033, #3a0066, #000);
-    color: white;
-    text-align: center;
-    overflow-x: hidden;
+:root{
+--bg:#0b0f1a;
+--card:#12182a;
+--accent:#00e5ff;
+--accent2:#ff00cc;
+--text:#ffffff;
+--muted:#a0a8c0;
 }
-header {
-    padding: 40px 20px;
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Inter',sans-serif;
+background:linear-gradient(180deg,#05070f,#0b0f1a);
+color:var(--text);
 }
-h1 {
-    font-size: 2rem;
-    background: linear-gradient(90deg,#ff00cc,#00ffff);
-    -webkit-background-clip: text;
-    color: transparent;
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:10px;
+padding:15px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+z-index:1000;
 }
-.card {
-    margin: 20px;
-    padding: 20px;
-    border-radius: 15px;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px rgba(0,255,255,0.2);
-    transition: 0.3s;
+
+nav a{
+color:white;
+text-decoration:none;
+padding:10px 18px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.2);
+transition:0.3s;
+font-size:14px;
 }
-.card:hover {
-    transform: scale(1.05);
+
+nav a:hover{
+background:linear-gradient(90deg,var(--accent2),var(--accent));
+color:black;
 }
-a.button {
-    display: inline-block;
-    margin: 15px;
-    padding: 12px 25px;
-    border-radius: 30px;
-    background: linear-gradient(90deg,#ff00cc,#00ffff);
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:100px 20px 40px;
+text-align:center;
 }
-a.button:hover {
-    transform: scale(1.1);
+
+h1{
+font-size:2.4rem;
+margin-bottom:15px;
+background:linear-gradient(90deg,var(--accent2),var(--accent));
+-webkit-background-clip:text;
+color:transparent;
 }
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 0.8rem;
-    opacity: 0.7;
+
+h2{
+margin-bottom:10px;
+}
+
+p{
+max-width:700px;
+color:var(--muted);
+line-height:1.6;
+}
+
+.card{
+background:var(--card);
+padding:25px;
+border-radius:16px;
+margin:15px 0;
+box-shadow:0 0 20px rgba(0,0,0,0.4);
+width:100%;
+max-width:750px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+font-size:12px;
+color:var(--muted);
 }
 </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Stacey Development</h1>
-    <p>Independent Mobile App Developer</p>
-</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="privacy.html">Privacy</a>
+<a href="marketing.html">Marketing</a>
+<a href="support.html">Support</a>
+</nav>
+
+<section>
+<h1>Stacey Development</h1>
 
 <div class="card">
-    <h2>Joker Gems</h2>
-    <p>A creative mobile game project focused on entertainment and value for players.</p>
+<h2>Developer Information</h2>
+<p>Stacey Development is an independent mobile developer focused on transparency, user trust, and continuous improvement of applications.</p>
+<p>Developer Account: cupipikijob92@gmail.com</p>
 </div>
 
-<div>
-    <a class="button" href="privacy.html">Privacy Policy</a>
-    <a class="button" href="marketing.html">Marketing Info</a>
-    <a class="button" href="support.html">Support</a>
+<div class="card">
+<h2>Application: Joker Gems</h2>
+<p>Joker Gems is an entertainment-focused mobile application designed to provide engaging user experiences.</p>
+<p>The project is actively maintained and continuously improved.</p>
 </div>
+
+<div class="card">
+<h2>Transparency Statement</h2>
+<p>This website is created to provide clear and open information for users and Google Play moderators.</p>
+<p>The goal is to ensure full transparency about the developer, the application, and its policies.</p>
+</div>
+
+</section>
 
 <footer>
-    Developer Account: cupipikijob92@gmail.com<br>
-    © 2026 Stacey Development
+© 2026 Stacey Development
 </footer>
 
 </body>
