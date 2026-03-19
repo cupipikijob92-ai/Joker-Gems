@@ -3,80 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy | Joker Gems</title>
+<title>Privacy Policy</title>
+
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f0f1a;
-    color: white;
-    padding: 20px;
-}
-h1 {
-    text-align: center;
-}
-.container {
-    max-width: 600px;
-    margin: auto;
-}
-button {
-    width: 100%;
-    padding: 15px;
-    margin-top: 30px;
-    border-radius: 30px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    background: linear-gradient(90deg,#ff0080,#7928ca);
-    color: white;
-}
-button:hover {
-    opacity: 0.8;
-}
-a {
-    color: #00ffff;
-}
+/* тот же стиль */
+:root{--bg:#0b0f1a;--card:#12182a;--accent:#00e5ff;--accent2:#ff00cc;--text:#fff;--muted:#a0a8c0;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Inter;background:#0b0f1a;color:white;}
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:center;gap:10px;padding:15px;background:rgba(0,0,0,0.6);}
+nav a{color:white;text-decoration:none;padding:10px 18px;border-radius:20px;border:1px solid rgba(255,255,255,0.2);}
+section{padding:100px 20px;max-width:800px;margin:auto;}
+.card{background:var(--card);padding:25px;border-radius:16px;margin:15px 0;}
+button{margin-top:20px;padding:15px;width:100%;border:none;border-radius:25px;background:linear-gradient(90deg,var(--accent2),var(--accent));color:black;}
 </style>
 
 <script>
-function closeWebView() {
-    if (window.Android && Android.closeWebView) {
-        Android.closeWebView();
-    } else if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.closeWebView) {
-        window.webkit.messageHandlers.closeWebView.postMessage(null);
-    } else {
-        window.close();
-    }
+function closeWebView(){
+if(window.Android&&Android.closeWebView){Android.closeWebView();}
+else{window.close();}
 }
 </script>
 </head>
+
 <body>
 
-<div class="container">
+<nav>
+<a href="index.html">Home</a>
+<a href="privacy.html">Privacy</a>
+<a href="marketing.html">Marketing</a>
+<a href="support.html">Support</a>
+</nav>
+
+<section>
+
 <h1>Privacy Policy</h1>
 
-<p>Joker Gems by Stacey Development respects your privacy.</p>
+<div class="card">
+<h2>Overview</h2>
+<p>Joker Gems does not collect, store, or process any personal data.</p>
+</div>
 
-<h3>Data Collection</h3>
-<p>We do NOT collect any personal data.</p>
+<div class="card">
+<h2>Data Collection</h2>
+<p>No personal information, device data, or usage data is collected.</p>
+</div>
 
-<h3>Data Storage</h3>
-<p>We do NOT store any data.</p>
+<div class="card">
+<h2>Third-Party Services</h2>
+<p>The application does not use analytics, ads, or tracking SDKs.</p>
+</div>
 
-<h3>Data Sharing</h3>
-<p>We do NOT share any data with third parties.</p>
-
-<h3>Third-Party Services</h3>
-<p>The application does not use third-party analytics, ads, or tracking systems.</p>
-
-<p>If you have any questions, contact: cupipikijob92@gmail.com</p>
+<div class="card">
+<h2>Contact</h2>
+<p>cupipikijob92@gmail.com</p>
+</div>
 
 <button onclick="closeWebView()">Close Policy</button>
 
-<p style="margin-top:20px;">
-<a href="index.html">Back to Developer Page</a>
-</p>
-</div>
+</section>
 
 </body>
 </html>
